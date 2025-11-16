@@ -1,0 +1,12 @@
+services:
+  diary:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: virtual-diary
+    ports:
+      - "5959:3000"
+    restart: unless-stopped
+    volumes:
+      - ./index.html:/app/index.html:ro
+      - ./entries.json:/app/entries.json:ro
