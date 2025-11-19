@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white flex items-center justify-center p-4">
+    <div class="max-w-2xl mx-auto text-center">
+      
+      <!-- Main Content -->
+      <div class="mb-12 animate-fade-in">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
+          HI, Long time to talk.
+        </h1>
+        
+        <div class="space-y-6 text-lg md:text-xl text-slate-300 leading-relaxed mb-12">
+          <p>
+            Thank you for seeing this and trusting it.
+          </p>
+          <p>
+            This is a collection of thoughts, feelings, and moments I wanted to share with you. Maybe some regrets too.
+          </p>
+          <p>
+            Some days are heavy, some are light. But all of them are honest.
+          </p>
+          <p>
+            I hope you find something here that resonates with you, this is mainly for my closure and healing. This is not my confession of love, that I can't offer right now. But I hope this gives perspective into my mind.
+          </p>
+        </div>
+      </div>
+
+      <!-- Enter Button -->
+      <a 
+        href="/diary.html" 
+        class="inline-flex items-center gap-3 px-8 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl"
+      >
+        <span>Enter</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14"/>
+          <path d="m12 5 7 7-7 7"/>
+        </svg>
+      </a>
+
+      <!-- Optional subtitle -->
+      <p class="mt-8 text-sm text-slate-400">
+        Take your time. There's no rush.
+      </p>
+    </div>
+  </div>
+
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .animate-fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+  </style>
+</body>
+</html>

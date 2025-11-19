@@ -6,8 +6,9 @@ WORKDIR /app
 RUN npm install -g serve
 
 # Copy HTML and JSON files
-COPY index.html ./
-COPY entries.json ./
+COPY landing.html ./landing.html
+COPY index.html ./index.html
+COPY entries.json ./entries.json
 
 EXPOSE 3000
 
